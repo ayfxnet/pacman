@@ -847,7 +847,7 @@ var PACMAN = (function () {
             setState(PAUSE);
             audio.pause();
             map.draw(ctx);
-            dialog("Paused");
+            dialog("Pause");
         } else if (state !== PAUSE) {   
             return user.keyDown(e);
         }
@@ -1053,7 +1053,7 @@ var PACMAN = (function () {
         }
         
         map.draw(ctx);
-        dialog("Loading ...");
+        dialog("Lade ...");
 
         var extension = Modernizr.audio.ogg ? 'ogg' : 'mp3';
 
